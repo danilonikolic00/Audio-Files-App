@@ -81,42 +81,42 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 
 ## Funkcionalnosti
 
-# 1. Konverzija
+### 1. Konverzija
 - Korisnik može:
     - Izabrati fajlove za konverziju.
     - Odabrati željeni format i dodatne opcije (bitrate, sample rate, broj kanala).
 - Klikom na Convert započinje proces konverzije. Napredak konverzije se prikazuje putem progres bara.
 
-# 2. Kompresija
+### 2. Kompresija
 - Nakon konverzije, fajlovi se prikazuju u tabeli sa procentom kompresije.
 - Duplim klikom na fajl pokreće se reprodukcija, dok desni klik prikazuje dodatne informacije.
 - Opcije u tabeli fajlova:
     - Clear History: Briše sve fajlove iz tabele.
     - Clear Selected: Briše samo selektovane fajlove.
 
-# 3. Trim
+### 3. Trim
 - Korisnik može trimovati fajl odabirom početka i kraja audio fajla.
 - Klikom na Trim korisnik kreira novi fajl sa zadatim opsegom.
 
-# 4. Merge
+### 4. Merge
 - Korisnik bira dva ili više fajlova istog formata.
 - Klikom na Merge Files otvara se dijalog za unos imena i lokacije za čuvanje fajla.
 - Nakon uspešnog spajanja, korisnik se obaveštava.
 
-# 5. Edit
+### 5. Edit
 - Klikom na Edit File Info, korisnik može menjati:
     - Naslov (Title)
     - Album
     - Izvođač (Artist)
 - Klikom na Apply, izmene se primenjuju na fajl.
 
-# 6. Podešavanje Osnovnih Parametara
+### 6. Podešavanje Osnovnih Parametara
 - Korisnik može menjati:
     - Brzinu reprodukcije: Od 0.5x do 1.5x.
     - Jačinu zvuka: Od -10dB do +10dB.
 - Klikom na OK, generiše se novi fajl sa zadatim parametrima.
 
-# 7. Prikaz Dodatnih Informacija
+### 7. Prikaz Dodatnih Informacija
 - Za izabrani fajl prikazuju se:
     - Trajanje
     - Kodek
@@ -125,7 +125,7 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
     - Broj kanala
 - Klikom na Show Spectrogram, generiše se spektrogram fajla kao vizuelni prikaz.
 
-# 8. Ekstrakcija zvuka iz video fajla
+### 8. Ekstrakcija zvuka iz video fajla
 - Korisnik može izabrati video fajl (npr. MP4, MKV, AVI).
 - Nakon uspešne ekstrakcije generiše se audio fajl.
 
