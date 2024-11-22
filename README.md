@@ -28,10 +28,10 @@ Pored toga, moguće je editovati metapodatke fajla, promeniti detalje zvuka (brz
 
 ## Tehnologije
 
-**Python**: Programski jezik.
-**FFmpeg**: Obrada i konverzija audio fajlova.
-**Tkinter & ttkbootstrap**: Za korisnički interfejs.
-**PIL**: Rad sa slikama (prikaz spektrograma).
+**Python**: Programski jezik.  
+**FFmpeg**: Obrada i konverzija audio fajlova.  
+**Tkinter & ttkbootstrap**: Za korisnički interfejs.  
+**PIL**: Rad sa slikama (prikaz spektrograma).  
 
 ## Instalacija
 
