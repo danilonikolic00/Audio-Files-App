@@ -103,11 +103,11 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 - *Kodeci*  
   Podržava popularne kodeke, uključujući H.264, AAC, MP3, Opus i H.265 (HEVC).
 
-**Primer upotrebe FFmpeg komande**
+## FFmpeg Komande
 
-    Konverzija fajla iz MP4 u MP3 format:  
-        ```python  
-        ffmpeg -i input.mp4 -b:a 192k output.mp3
+Jednostavna FFmpeg komanda ima format:  
+    ```bash
+    ffmpeg [input options] -i [input file] [output options] [output file]
 
 **FFmpeg komande (Python biblioteka)**
 
