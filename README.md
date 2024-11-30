@@ -79,19 +79,19 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 
 **Glavne karakteristike FFmpeg-a**
 
-- *Široka podrška za formate*
+- *Široka podrška za formate*   
   Radi sa velikim brojem formata, uključujući MP4, MKV, AVI, MOV, MP3, WAV, AAC i mnoge druge.
 
 - *Transkodiranje*  
   Omogućava konverziju fajlova između različitih formata uz prilagođavanje parametara kao što su bitrate, rezolucija i kodeci.
 
-- *Manipulacija zvuka*  
+- *Manipulacija zvuka*   
   Podržava normalizaciju zvuka, uklanjanje šuma, dodavanje efekata (npr. echo, reverb) i podešavanje glasnoće i tona.
 
-- *Komandna linija* 
+- *Komandna linija*  
   Jednostavne i fleksibilne komande omogućavaju preciznu kontrolu i automatizaciju zadataka.
 
-- *Podrška za filtre* 
+- *Podrška za filtre*  
   Nudi raznovrsne filtere za dodavanje efekata, promenu rezolucije, titlova, rotaciju i druge obrade multimedije.
 
 - *Multiplatformska dostupnost*  
@@ -100,34 +100,34 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 - *Visoka optimizacija*  
   Efikasno koristi sistemske resurse za brzo i pouzdano procesiranje medijskih fajlova.
 
-- *Kodeci* 
+- *Kodeci*  
   Podržava popularne kodeke, uključujući H.264, AAC, MP3, Opus i H.265 (HEVC).
 
 **Primer upotrebe FFmpeg komande**
 
-Jednostavna ffmpeg komanda ima format:
+Jednostavna ffmpeg komanda ima format:  
     ``` bash
     ffmpeg [input options] -i [input file] [output options] [output file]
-Primer konverzije fajla iz MP4 u MP3 format:
+Primer konverzije fajla iz MP4 u MP3 format:  
     ``` bash
     ffmpeg -i input.mp4 -b:a 192k output.mp3
 
 **FFmpeg komande (Python biblioteka)**
 
 FFmpeg se može koristiti unutar Python-a za manipulaciju multimedijalnim fajlovima putem funkcija iz odgovarajuće biblioteke. Osnovne funkcije uključuju:
-- *input()*
+- *input()*  
   Definiše ulazni fajl, uređaj ili strim koji će se obraditi. Može primati različite parametre (putanja do fajla, URL). 
   ```python
   input_file = ffmpeg.input('input.mp4')
-- *output()*
+- *output()*  
   Definiše izlazni fajl, uređaj ili strim u koji će se sačuvati rezultat obrade.
   ```python
   output_file = ffmpeg.output(input_file, 'output.mp3', bitrate='192k')
-- *probe()*
+- *probe()*  
   Koristi se za prikupljanje informacija o multimedijalnom fajlu bez njegove obrade. Vraća metapodatke o fajlu, kao što su formati, trajanje, veličina, kodeci, rezolucija, broj audio kanala i druge relevantne informacije. 
   ```python
   metadata = ffmpeg.probe('input.mp4')
-- *run()*
+- *run()*  
   Ova funkcija pokreće kompletan ffmpeg proces sa zadatim ulazima, izlazima i opcijama. Koristi se kada prilikom izvršenja transkodiranja, konverzije formata ili druge operacije na medijskom fajlu. 
   ```python
   ffmpeg.run(output_file)
