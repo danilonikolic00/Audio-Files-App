@@ -79,30 +79,58 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 
 **Glavne karakteristike FFmpeg-a**
 
-- Široka podrška za formate: Radi s formatima kao što su MP4, MKV, AVI, MOV, MP3, WAV, AAC i mnogi drugi.
-- Transkodiranje: Pretvara fajlove između različitih formata uz prilagođavanje parametara (bitrate, rezolucija, kodeci).
-- Manipulacija zvuka: Omogućava normalizaciju zvuka, uklanjanje šuma, dodavanje efekata (echo, reverb) i prilagođavanje glasnoće i tona.
-- Komandna linija: Precizna kontrola i automatizacija zadataka putem jednostavnih naredbi.
-- Podrška za filtre: Dodavanje efekata, promena rezolucije, titlovi, rotacija i druge obrade.
-- Multiplatformska dostupnost: Dostupan na Windows-u, Linux-u i macOS-u.
-- Visoka optimizacija: Efikasno koristi sistemske resurse za brzo procesiranje.
-- Kodeci: Podržava popularne kodeke poput H.264, AAC, MP3, Opus, H.265 (HEVC).
+- *Široka podrška za formate*
+  Radi sa velikim brojem formata, uključujući MP4, MKV, AVI, MOV, MP3, WAV, AAC i mnoge druge.
+
+- *Transkodiranje*  
+  Omogućava konverziju fajlova između različitih formata uz prilagođavanje parametara kao što su bitrate, rezolucija i kodeci.
+
+- *Manipulacija zvuka*  
+  Podržava normalizaciju zvuka, uklanjanje šuma, dodavanje efekata (npr. echo, reverb) i podešavanje glasnoće i tona.
+
+- *Komandna linija* 
+  Jednostavne i fleksibilne komande omogućavaju preciznu kontrolu i automatizaciju zadataka.
+
+- *Podrška za filtre* 
+  Nudi raznovrsne filtere za dodavanje efekata, promenu rezolucije, titlova, rotaciju i druge obrade multimedije.
+
+- *Multiplatformska dostupnost*  
+  Dostupan na različitim operativnim sistemima, uključujući Windows, Linux i macOS.
+
+- *Visoka optimizacija*  
+  Efikasno koristi sistemske resurse za brzo i pouzdano procesiranje medijskih fajlova.
+
+- *Kodeci* 
+  Podržava popularne kodeke, uključujući H.264, AAC, MP3, Opus i H.265 (HEVC).
 
 **Primer upotrebe FFmpeg komande**
 
-- Prosta ffmpeg komanda ima format:
+Jednostavna ffmpeg komanda ima format:
     ``` bash
-    [Command Prompt] [Input File] [Flags/Actions] [Output File]
-- Primer:
+    ffmpeg [input options] -i [input file] [output options] [output file]
+Primer konverzije fajla iz MP4 u MP3 format:
     ``` bash
-    ffmpeg -i /filepath/inputfile.ext -flag some_action /filepath/outputfile.ext
+    ffmpeg -i input.mp4 -b:a 192k output.mp3
 
 **FFmpeg komande (Python biblioteka)**
 
-- input(): Definiše ulazni fajl, uređaj ili strim koji će se obraditi. Može primati različite parametre (putanja do fajla, URL). 
-- output(): Definiše izlazni fajl, uređaj ili strim u koji će se sačuvati rezultat obrade. 
-- probe(): Koristi se za prikupljanje informacija o multimedijalnom fajlu bez njegove obrade. Vraća metapodatke o fajlu, kao što su formati, trajanje, veličina, kodeci, rezolucija, broj audio kanala i druge relevantne informacije. 
-- run(): Ova funkcija pokreće kompletan ffmpeg proces sa zadatim ulazima, izlazima i opcijama. Koristi se kada prilikom izvršenja transkodiranja, konverzije formata ili druge operacije na medijskom fajlu. 
+FFmpeg se može koristiti unutar Python-a za manipulaciju multimedijalnim fajlovima putem funkcija iz odgovarajuće biblioteke. Osnovne funkcije uključuju:
+- *input()*
+  Definiše ulazni fajl, uređaj ili strim koji će se obraditi. Može primati različite parametre (putanja do fajla, URL). 
+  ```python
+  input_file = ffmpeg.input('input.mp4')
+- *output()*
+  Definiše izlazni fajl, uređaj ili strim u koji će se sačuvati rezultat obrade.
+  ```python
+  output_file = ffmpeg.output(input_file, 'output.mp3', bitrate='192k')
+- *probe()*
+  Koristi se za prikupljanje informacija o multimedijalnom fajlu bez njegove obrade. Vraća metapodatke o fajlu, kao što su formati, trajanje, veličina, kodeci, rezolucija, broj audio kanala i druge relevantne informacije. 
+  ```python
+  metadata = ffmpeg.probe('input.mp4')
+- *run()*
+  Ova funkcija pokreće kompletan ffmpeg proces sa zadatim ulazima, izlazima i opcijama. Koristi se kada prilikom izvršenja transkodiranja, konverzije formata ili druge operacije na medijskom fajlu. 
+  ```python
+  ffmpeg.run(output_file)
 
 ---
 
