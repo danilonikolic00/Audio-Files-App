@@ -77,6 +77,33 @@ Audio fajlovi često dolaze u različitim formatima i sa različitim parametrima
 
 Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplikacija pruža moćne alate za obradu audio fajlova čak i korisnicima bez tehničkog iskustva.
 
+**Glavne karakteristike FFmpeg-a**
+
+- Široka podrška za formate: Radi s formatima kao što su MP4, MKV, AVI, MOV, MP3, WAV, AAC i mnogi drugi.
+- Transkodiranje: Pretvara fajlove između različitih formata uz prilagođavanje parametara (bitrate, rezolucija, kodeci).
+- Manipulacija zvuka: Omogućava normalizaciju zvuka, uklanjanje šuma, dodavanje efekata (echo, reverb) i prilagođavanje glasnoće i tona.
+- Komandna linija: Precizna kontrola i automatizacija zadataka putem jednostavnih naredbi.
+- Podrška za filtre: Dodavanje efekata, promena rezolucije, titlovi, rotacija i druge obrade.
+- Multiplatformska dostupnost: Dostupan na Windows-u, Linux-u i macOS-u.
+- Visoka optimizacija: Efikasno koristi sistemske resurse za brzo procesiranje.
+- Kodeci: Podržava popularne kodeke poput H.264, AAC, MP3, Opus, H.265 (HEVC).
+
+**Primer upotrebe FFmpeg komande**
+
+- Prosta ffmpeg komanda ima format:
+    ``` bash
+    [Command Prompt] [Input File] [Flags/Actions] [Output File]
+- Primer:
+    ``` bash
+    ffmpeg -i /filepath/inputfile.ext -flag some_action /filepath/outputfile.ext
+
+**FFmpeg komande (Python biblioteka)**
+
+- input(): Definiše ulazni fajl, uređaj ili strim koji će se obraditi. Može primati različite parametre (putanja do fajla, URL). 
+- output(): Definiše izlazni fajl, uređaj ili strim u koji će se sačuvati rezultat obrade. 
+- probe(): Koristi se za prikupljanje informacija o multimedijalnom fajlu bez njegove obrade. Vraća metapodatke o fajlu, kao što su formati, trajanje, veličina, kodeci, rezolucija, broj audio kanala i druge relevantne informacije. 
+- run(): Ova funkcija pokreće kompletan ffmpeg proces sa zadatim ulazima, izlazima i opcijama. Koristi se kada prilikom izvršenja transkodiranja, konverzije formata ili druge operacije na medijskom fajlu. 
+
 ---
 
 ## Funkcionalnosti
