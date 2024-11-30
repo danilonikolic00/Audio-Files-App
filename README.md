@@ -103,12 +103,6 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 - *Kodeci*  
   Podržava popularne kodeke, uključujući H.264, AAC, MP3, Opus i H.265 (HEVC).
 
-## FFmpeg Komande
-
-Jednostavna FFmpeg komanda ima format:  
-    ```bash
-    ffmpeg [input options] -i [input file] [output options] [output file]
-
 **FFmpeg komande (Python biblioteka)**
 
 FFmpeg se može koristiti unutar Python-a za manipulaciju multimedijalnim fajlovima putem funkcija iz odgovarajuće biblioteke. Osnovne funkcije uključuju:
