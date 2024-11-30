@@ -58,14 +58,17 @@ Pre nego što pokrenete aplikaciju, potrebno je instalirati:
 - Konverziju između različitih formata (npr. MP3, WAV, FLAC, AAC za audio, ili MP4, MKV za video).
 - Manipulaciju zvuka i videa (promena bitrate-a, sample rate-a, trimovanje, ekstrakcija zvuka iz videa).
 - Visoke performanse i efikasnost u obradi velikih fajlova.
-
-- Format jednostavne komande:  
-   ``` bash
-   ffmpeg [input options] -i [input file] [output options] [output file]
   
 FFmpeg je odabran za projekat zbog svoje izuzetne fleksibilnosti i moći u obradi multimedijalnih fajlova. 
 On omogućava rad sa gotovo svim poznatim audio i video formatima, što ga čini idealnim za aplikaciju koja pruža funkcionalnosti poput konverzije, kompresije, ekstrakcije zvuka i drugih manipulacija nad audio fajlovima.
 FFmpeg rešava problem interoperabilnosti između različitih multimedijalnih formata i pruža korisnicima alate za kompleksne operacije bez potrebe za dubokim tehničkim znanjem.
+
+- Format jednostavne komande:  
+   ``` bash
+   ffmpeg [input options] -i [input file] [output options] [output file]
+- Primer konverzije fajla iz MP4 u MP3 format:
+     ``` bash
+   ffmpeg -i input.mp4 -b:a 192k output.mp3
 
 U ovom projektu, FFmpeg je integrisan kao alat za:
 
