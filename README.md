@@ -106,7 +106,7 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 **Primer upotrebe FFmpeg komande**
 
 Konverzija fajla iz MP4 u MP3 format:  
-    ``` bash
+    ``` bash  
     ffmpeg -i input.mp4 -b:a 192k output.mp3
 
 **FFmpeg komande (Python biblioteka)**
