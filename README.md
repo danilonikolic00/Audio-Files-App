@@ -59,6 +59,10 @@ Pre nego što pokrenete aplikaciju, potrebno je instalirati:
 - Manipulaciju zvuka i videa (promena bitrate-a, sample rate-a, trimovanje, ekstrakcija zvuka iz videa).
 - Visoke performanse i efikasnost u obradi velikih fajlova.
 
+- Format jednostavne komande:  
+   ``` bash
+   ffmpeg [input options] -i [input file] [output options] [output file]
+  
 FFmpeg je odabran za projekat zbog svoje izuzetne fleksibilnosti i moći u obradi multimedijalnih fajlova. 
 On omogućava rad sa gotovo svim poznatim audio i video formatima, što ga čini idealnim za aplikaciju koja pruža funkcionalnosti poput konverzije, kompresije, ekstrakcije zvuka i drugih manipulacija nad audio fajlovima.
 FFmpeg rešava problem interoperabilnosti između različitih multimedijalnih formata i pruža korisnicima alate za kompleksne operacije bez potrebe za dubokim tehničkim znanjem.
