@@ -108,6 +108,7 @@ Kombinovanjem FFmpeg mogućnosti sa jednostavnim korisničkim interfejsom, aplik
 Jednostavna ffmpeg komanda ima format:  
     ``` bash
     ffmpeg [input options] -i [input file] [output options] [output file]
+    
 Primer konverzije fajla iz MP4 u MP3 format:  
     ``` bash
     ffmpeg -i input.mp4 -b:a 192k output.mp3
