@@ -135,19 +135,19 @@ FFmpeg se može koristiti unutar Python-a za manipulaciju multimedijalnim fajlov
 
 ## Kada koristiti FFmpeg?
 
-- *Potrebna je visoka kontrola nad konverzijom i obradom*
+- *Potrebna je visoka kontrola nad konverzijom i obradom*  
   Kada je potrebna prilagođena kontrola nad parametrima kao što su bitrate, rezolucija, ili kodeci, FFmpeg omogućava detaljno podešavanje, što ga čini odličnim za napredne korisnike.
-- *Automatizacija velikih zadataka*
+- *Automatizacija velikih zadataka*  
   Ako je potrebno automatizovati procese, kao što su masovna konverzija fajlova ili primena filtera na više medijskih fajlova, FFmpeg se lako može integrisati u skripte i alate za automatizaciju.
-- *Rad sa različitim formatima*
+- *Rad sa različitim formatima*  
   Kada radite sa manje poznatim formatima koje komercijalni softver možda ne podržava, FFmpeg je često jedini alat koji može da ih obradi.
-- *Optimizacija performansi i resursa*
+- *Optimizacija performansi i resursa*  
   Kada su ograničeni računski resursi ili kada je potrebno brzo procesiranje, FFmpeg je vrlo efikasan zahvaljujući svom visoko optimizovanom kodu.
-- *Projekti na više platformi*
+- *Projekti na više platformi*  
   Ako je aplikacija ili proces potreban na više operativnih sistema (Windows, macOS, Linux), FFmpeg je odličan izbor jer je kompatibilan sa svim glavnim platformama.
-- *Visoka fleksibilnost*
+- *Visoka fleksibilnost*  
   Kada je potreban alat koji može lako da se integriše u druge aplikacije ili servise. Na primer, ugradnja FFmpeg-a u web ili desktop aplikacije za streaming ili obradu medijskih sadržaja.
-- *Razvoj specifičnih rešenja*
+- *Razvoj specifičnih rešenja*  
   Kada razvijate prilagođene alate ili aplikacije, FFmpeg pruža mogućnost implementacije specifičnih funkcionalnosti kroz svoj API.
 
 ---
