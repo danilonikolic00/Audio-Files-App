@@ -13,6 +13,7 @@ Pored toga, moguće je editovati metapodatke fajla, promeniti detalje zvuka (brz
 
 - [Tehnologije](#tehnologije)
 - [FFmpeg](#FFmpeg)
+- [Kada koristiti FFmpeg?](#kada-koristiti-FFmpeg)
 - [Instalacija](#instalacija)
 - [Funkcionalnosti](#funkcionalnosti)
   - [1. Konverzija](#1-konverzija)
@@ -129,6 +130,25 @@ FFmpeg se može koristiti unutar Python-a za manipulaciju multimedijalnim fajlov
   Ova funkcija pokreće kompletan ffmpeg proces sa zadatim ulazima, izlazima i opcijama. Koristi se kada prilikom izvršenja transkodiranja, konverzije formata ili druge operacije na medijskom fajlu. 
   ```python
   ffmpeg.run(output_file)
+
+---
+
+## Kada koristiti FFmpeg?
+
+- *Potrebna je visoka kontrola nad konverzijom i obradom*
+  Kada je potrebna prilagođena kontrola nad parametrima kao što su bitrate, rezolucija, ili kodeci, FFmpeg omogućava detaljno podešavanje, što ga čini odličnim za napredne korisnike.
+- *Automatizacija velikih zadataka*
+  Ako je potrebno automatizovati procese, kao što su masovna konverzija fajlova ili primena filtera na više medijskih fajlova, FFmpeg se lako može integrisati u skripte i alate za automatizaciju.
+- *Rad sa različitim formatima*
+  Kada radite sa manje poznatim formatima koje komercijalni softver možda ne podržava, FFmpeg je često jedini alat koji može da ih obradi.
+- *Optimizacija performansi i resursa*
+  Kada su ograničeni računski resursi ili kada je potrebno brzo procesiranje, FFmpeg je vrlo efikasan zahvaljujući svom visoko optimizovanom kodu.
+- *Projekti na više platformi*
+  Ako je aplikacija ili proces potreban na više operativnih sistema (Windows, macOS, Linux), FFmpeg je odličan izbor jer je kompatibilan sa svim glavnim platformama.
+- *Visoka fleksibilnost*
+  Kada je potreban alat koji može lako da se integriše u druge aplikacije ili servise. Na primer, ugradnja FFmpeg-a u web ili desktop aplikacije za streaming ili obradu medijskih sadržaja.
+- *Razvoj specifičnih rešenja*
+  Kada razvijate prilagođene alate ili aplikacije, FFmpeg pruža mogućnost implementacije specifičnih funkcionalnosti kroz svoj API.
 
 ---
 
